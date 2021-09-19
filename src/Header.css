@@ -15,7 +15,7 @@
   /* TODO: whate object-fit*/
   object-fit: contain;
   margin: 0 20px;
-  margin-top: 18px;
+  margin-top: 12px;
 }
 .header__search {
   display: flex;
@@ -60,5 +60,5 @@
 }
 .header__basketCount {
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
