@@ -53,7 +53,7 @@
   font-size: 13px;
   font-weight: 800;
 }
-.header__optionBasket {
+.header__optionCart {
   display: flex;
   align-items: center;
   color: white;
