@@ -8,7 +8,7 @@ import { useStateValue } from "./StateProvider";
 
 export default function Header() {
   const [{ cart }, dispatch] = useStateValue();
-
+  //console.log("cart-> ?", cart);
   return (
     <div className="header">
       {/* Logo */}
