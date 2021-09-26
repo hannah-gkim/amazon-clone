@@ -3,9 +3,12 @@ import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
+import { useStateValue } from "./StateProvider";
 //import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 export default function Header() {
+  const [{ cart }, dispatch] = useStateValue();
+
   return (
     <div className="header">
       {/* Logo */}
@@ -35,7 +38,9 @@ export default function Header() {
           <div className="header__optionCart">
             {/* <ShoppingBasketIcon /> */}
             <ShoppingCartOutlinedIcon />
-            <span className="header__optionLineTwo header__basketCount">0</span>
+            <span className="header__optionLineTwo header__basketCount">
+              {cart?.length}
+            </span>
           </div>
         </Link>
       </div>
